@@ -22,8 +22,11 @@
         <activity
             android:name=".LoginPage"
             android:theme="@style/AppTheme.nobar" />
-        <activity android:name=".SignupPage"
-            android:theme="@style/AppTheme.nobar"></activity>
+        <activity
+            android:name=".SignupPage"
+            android:theme="@style/AppTheme.nobar" />
+        <activity android:name=".HomePage"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>
