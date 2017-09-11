@@ -1,4 +1,47 @@
 <resources>
     <string name="app_name">TransTracker</string>
     <string name="title_activity_home_page">HomePage</string>
+
+    <string-array name="City">
+        <item>Select City for Invest</item>
+        <item>Patna</item>
+        <item>Muzaffarpur</item>
+        <item>Gaya</item>
+        <item>Nalanda</item>
+    </string-array>
+
+    <string-array name="localityPatna">
+        <item>Select Locality</item>
+        <item>Anishabad</item>
+        <item>Ashiana</item>
+        <item>BoringRoad</item>
+        <item>Kankarbagh</item>
+    </string-array>
+
+    <string-array name="localityMuzzafpur">
+        <item>Select Locality</item>
+        <item>Ahiyapur</item>
+        <item>Bakarpur</item>
+        <item>Bela Road</item>
+        <item>Sikandarpur</item>
+    </string-array>
+
+    <string-array name="localityGaya">
+        <item>Select Locality</item>
+        <item>Bihar Sharif</item>
+        <item>Bodhgaya</item>
+        <item>Nalanda University</item>
+        <item>Rajgir</item>
+    </string-array>
+
+    <string-array name="localityNalanda">
+        <item>Select Locality</item>
+        <item>Bihar Sharif</item>
+        <item>Nalanda University</item>
+        <item>Rajgir</item>
+    </string-array>
+
+    <string-array name="nothingSelected">
+        <item>Please Choose City First</item>
+    </string-array>
 </resources>

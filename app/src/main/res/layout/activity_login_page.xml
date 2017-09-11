@@ -11,15 +11,17 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/background">
+        android:background="@drawable/background"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:scaleType="fitCenter">
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5sp"
+            android:layout_marginTop="0sp"
             android:fontFamily="sans-serif-condensed"
-            android:padding="5sp"
             android:text="TransTracker"
             android:textAlignment="center"
             android:textColor="#3333cc"
@@ -42,79 +44,96 @@
 
     </RelativeLayout>
 
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="160sp"
-        android:gravity="center"
-        android:paddingLeft="32dp"
-        android:paddingRight="32dp"
-        android:paddingTop="16dp">
 
-        <EditText
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Organisation Name"
-            android:textColor="#990099"
-            android:textStyle="bold"/>
-
-    </android.support.design.widget.TextInputLayout>
-
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:clipToPadding="false"
-        android:gravity="center"
-        android:paddingLeft="32dp"
-        android:paddingRight="32dp"
-        android:paddingTop="16dp"
-        app:passwordToggleEnabled="true"
-        app:passwordToggleTint="@color/light_grey">
-
-        <EditText
+            android:orientation="vertical">
+        <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
-            android:password="true"
-            android:textColor="#990099"
-            android:textStyle="bold"/>
+            android:clipToPadding="false"
+            android:layout_marginTop="170sp"
+            android:gravity="center"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:paddingTop="16dp"
+            android:textColorHint="#ff0000">
 
-    </android.support.design.widget.TextInputLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Organisation Name"
+                android:textColor="#ff00ff"
+                android:textStyle="italic"
+                android:fontFamily="cursive"/>
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:paddingTop="16dp"
-        android:text="Forgot Password ?"
-        android:textColor="@color/dark_grey"
-        android:textStyle="bold" />
+        </android.support.design.widget.TextInputLayout>
 
-    <android.support.v7.widget.AppCompatButton
-        android:id="@+id/logintomain"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginTop="16dp"
-        android:background="#4747d1"
-        android:text="LOG IN"
-        android:textColor="#ffffff" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:paddingTop="16dp"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/light_grey"
+            android:textColorHint="#ff0000">
 
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="0.5dp"
-        android:layout_marginTop="16dp"
-        android:background="@color/light_grey" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:password="true"
+                android:textColor="#ff00ff"
+                android:textStyle="italic"
+                android:fontFamily="cursive"/>
 
-    <android.support.v7.widget.AppCompatButton
-        android:id="@+id/logintosignup"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Not A Member ??      Sign Up"
-        android:background="#ffffff"
-        android:textColor="@color/light_grey"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:text="Forgot Password ?"
+            android:textColor="@color/dark_grey"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/logintomain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="16dp"
+            android:background="#4747d1"
+            android:text="LOG IN"
+            android:textColor="#ffffff" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/light_grey" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/logintosignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Not A Member.....??  Sign Up"
+            android:background="#ffffff"
+            android:textColor="#8c8c8c"/>
+        </LinearLayout>
+    </ScrollView>
+
 
 
 </LinearLayout>
